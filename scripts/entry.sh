@@ -1,5 +1,5 @@
 #!/bin/sh
-if [[ -z "${HTTPS_CERT}" ]]; then
+if [[ -n "${HTTPS_CERT}" ]]; then
     mv /etc/nginx/http.d/default.ssl.conf /etc/nginx/http.d/default.conf 
     echo $HTTPS_CERT > /dashboard/data/ssl.pem
     echo $HTTPS_KEY > /dashboard/data/ssl.key
