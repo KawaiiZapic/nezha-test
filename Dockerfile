@@ -3,10 +3,10 @@ FROM ghcr.io/naiba/nezha-dashboard:latest
 
 
 COPY ./config.yaml /dashboard/data/
-RUN sed -i "s/nz_http_port/$PORT/g" /dashboard/data/config.yaml
+COPY ./entry.sh /dashboard/entry.sh
 # Run the app.  CMD is required to run on Heroku
 # $PORT is set by Heroku			
 
 ENTRYPOINT []
 
-CMD /dashboard/app
+CMD /bin/sh /dashboard/entry.sh
