@@ -6,4 +6,4 @@ COPY config.yaml /data/config.yaml
 
 # Run the app.  CMD is required to run on Heroku
 # $PORT is set by Heroku			
-CMD /dashboard/app
+CMD /bin/bash
