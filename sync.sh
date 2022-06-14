@@ -1,5 +1,7 @@
 #!/bin/sh
 git clone $DATA_REPO /tmp/data_sync
+git config --global user.email "nezha@github.com"
+git config --global user.name "NezhaPanel"
 cd /tmp/data_sync
 while true
 do
