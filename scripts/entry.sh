@@ -1,8 +1,8 @@
 #!/bin/sh
 if [[ -n "${HTTPS_CERT}" ]]; then
     mv /etc/nginx/http.d/default.ssl.conf /etc/nginx/http.d/default.conf 
-    echo $HTTPS_CERT > /dashboard/data/ssl.pem
-    echo $HTTPS_KEY > /dashboard/data/ssl.key
+    echo $HTTPS_CERT | sed 's/ -/\n/g' | sed 's/- /\n/g' > /dashboard/data/ssl.pem
+    echo $HTTPS_KEY | sed 's/ -/\n/g' | sed 's/- /\n/g' > /dashboard/data/ssl.key
 fi
 sed -i "s/nz_http_port/$PORT/g" /etc/nginx/http.d/default.conf
 
