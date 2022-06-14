@@ -1,7 +1,7 @@
 debug: false
-httpport: nz_http_port
-language: zh_cn
-grpcport: 5555
+httpport: 9990
+language: zh
+grpcport: nz_grpc_port
 oauth2:
   type: "github" #Oauth2 登录接入类型，github/gitlab/jihulab/gitee
   admin: "nz_admin_logins" #管理员列表，半角逗号隔开
