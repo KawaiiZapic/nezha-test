@@ -7,5 +7,6 @@ sed -i "s/nz_github_oauth_client_id/$OAUTH_CLIENT_ID/g" /dashboard/data/config.y
 sed -i "s/nz_github_oauth_client_secret/$OAUTH_CLIENT_SECRET/g" /dashboard/data/config.yaml
 sed -i "s/nz_site_title/$SITE_TITLE/g" /dashboard/data/config.yaml
 chisel server --port 9992 &
+/bin/sh /dashboard/sync.sh &
 nginx
 /dashboard/app
