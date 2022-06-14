@@ -1,5 +1,5 @@
 debug: false
-httpport: 80
+httpport: nz_http_port
 language: zh_cn
 grpcport: 5555
 oauth2:
