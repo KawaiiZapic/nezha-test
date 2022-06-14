@@ -7,4 +7,4 @@ COPY ./config.yaml /dashboard/data/
 
 ENTRYPOINT []
 
-CMD /bin/bash
+CMD /bin/sh
