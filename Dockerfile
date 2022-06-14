@@ -9,4 +9,4 @@ RUN sed -i "s/nz_http_port/$PORT/g" ./config.yaml
 
 ENTRYPOINT []
 
-CMD /data/app
+CMD /dashboard/app
