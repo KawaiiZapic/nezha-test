@@ -1,0 +1,25 @@
+{
+  "name": "Nezha Heroku",
+  "description": "在Heroku上部署哪吒探针",
+  "stack": "container",
+  "env": {
+    "OAUTH_TYPE": {
+      "description": "登陆类型, 参考哪吒文档."
+    },
+    "OAUTH_ADMINS": {
+        "description": "管理员, 参考哪吒文档."
+    },
+    "OAUTH_CLIENT_ID": {
+        "description": "OAuth客户端ID, 参考哪吒文档"
+    },
+    "OAUTH_CLIENT_SECRET": {
+        "description": "OAuth客户端密钥, 参考哪吒文档"
+    },
+    "SITE_TITLE": {
+        "description": "面板网页标题"
+    },
+    "DATA_REPO": {
+        "description": "哪吒数据存储github仓库地址, 用于持久化数据."
+    }
+  }
+}
