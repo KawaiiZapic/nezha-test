@@ -2,6 +2,7 @@
 git config --global user.email "nezha@github.com"
 git config --global user.name "NezhaPanel"
 git clone $DATA_REPO /tmp/data_sync
+cp /tmp/data_sync/sqlite.db /dashboard/data/sqlite.db
 cd /tmp/data_sync
 while true
 do
