@@ -1,0 +1,14 @@
+[Unit]
+Description=Nezha
+Wants=networt-online.target
+After=network-online.target
+[Service]
+User=nobody
+WorkingDirectory=/opt/nezha/
+LimitNOFILE=4096
+PIDFile=/run/nezha.pid
+ExecStart=/opt/nezha/nezha-wrapper <chisel url> <token>
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
